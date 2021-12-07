@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<head>
+<html lang="en">
+<meta charset="utf-8">
+<script src="script.js"></script>
+
+</head>
+
+<style>
+
+h2{
+color: limegreen;
+}
+button{
+border: hidden;
+width: 170px;
+padding: 34px;
+}
+.fieldname{
+   text-align: left;
+   padding: 5px;
+}
+
+
+</style>
+
+
+
+
+<title>Payment Processing</title>
+<h2>Enter Payment Information</h2>
+
+<img src="AmEx.png" width="100" height="100">  
+<img src="Discover.png" width="100" height="100">  
+<img src="MasterCard.png" width="100" height="100">  
+<img src="Visa.png" width="100" height="100">  
+
+<form id="myForm" onSubmit="return validateForm();">
+
+<table>
+  <tr>
+<td class="fieldname"><label for="fname">First Name:</label></td>
+<td class="fieldname"><input type="text" id="fname" required></td>
+  </tr>
+
+  <tr>
+      <td class="fieldname"><label for="lname"></label>Last Name:</label></td>
+      <td class="fieldname"><input type="text" id="lname" required></td>
+  </tr>
+
+  <tr>
+      <td class="fieldname"><label for="address"></label>Address:</label></td>
+      <td class="fieldname"><input type="text" id="address" required></td>
+  </tr>
+
+  <tr>
+      <td class="fieldname"><label for="city">City:</label></td>
+      <td class="fieldname"><input type="text" id="city" required></td>
+  </tr>
+
+  <tr>
+    <td class="fieldname"><label for="zip"> Zip:</label></td>
+      <td class="fieldname"><input type="text" id="zip" required></td>
+  </tr>
+
+  <tr>
+    <td class="fieldname"><label for="email"></label>Email Address:</label></td>
+    <td class="fieldname"><input type="text" id="email" required></td>
+  </tr>
+
+  <tr>
+    <td class="fieldname"><label for="cardname">Name on Card:</label></td>
+    <td class="fieldname"><input type="text" id="cardname" required></td>
+  </tr>
+
+
+    <tr>
+      <td class="fieldname"><label for="cardnumber">Card Number:</label></td>
+      <td class="fieldname"><input type="text" id="cardnumber" required></td>
+    </tr>
+
+
+    <tr>
+      <td class="fieldname"><a target="_blank" href="https://en.wikipedia.org/wiki/Card_security_code" style="color:dodgerblue">CVV2/CVC:</a></td>
+      <td class="fieldname"><input type="text" id="cvc" required></label></td>
+    </tr>
+
+    <tr>
+      <td class="fieldname"><label for="state" required>State:
+      <td class="fieldname"><select id="state">
+  <option value="0" id="alabama">Select State</option>
+  <option value="1">Alabama</option>
+  <option value="2">Arizona</option>
+  <option value="3">Arkansas</option>
+  <option value="4">California</option>
+  <option value="5">Colorado</option>
+  <option value="6">Connecticut</option>
+  <option value="7">Delaware</option>
+  <option value="8">Florida</option>
+  <option value="9">Georgia</option>
+  <option value="10">Hawaii</option>
+  <option value="11">Idaho</option>
+  <option value="12">Ilinois</option>
+  <option value="13">Indiana</option>
+  <option value="14">Iowa</option>
+  <option value="15">Kansas</option>
+  <option value="16">Kentucky</option>
+  <option value="17">Louisiana</option>
+  <option value="18">Maine</option>
+  <option value="19">Maryland</option>
+  <option value="20">Massachusetts</option>
+  <option value="21">Michigan</option>
+  <option value="22">Minnesota</option>
+  <option value="23">Missouri</option>
+  <option value="24">Montana</option>
+  <option value="25">Nebraska</option>
+  <option value="26">Nevada</option>
+  <option value="27">New Hampshire</option>
+  <option value="28">New Jersey</option>
+  <option value="29">New Mexico</option>
+  <option value="30">New York</option>
+  <option value="31">North Carolina</option>
+  <option value="32">North Dakota</option>
+  <option value="33">Ohio</option>
+  <option value="34">Oklahoma</option>
+  <option value="35">Oregon</option>
+  <option value="36">Pennsylvania</option>
+  <option value="37">Rhode Island</option>
+  <option value="38">South Carolina</option>
+  <option value="39">South Dakota</option>
+  <option value="40">Tennessee</option>
+  <option value="41">Texas</option>
+  <option value="42">Utah</option>
+  <option value="43">Vermont</option>
+  <option value="44">Virginia</option>
+  <option value="45">Washington</option>
+  <option value="46">West Virginia</option>
+  <option value="47">Wisconsin</option>
+  <option value="48">Wyoming</option>
+  <option value="49">Alaska</option>
+  
+</select></label></td>
+  </tr>
+
+  <tr>
+    <td class="fieldname"><label for="exp">Expiration Date:</label></td>
+    <td class="fieldname"><input type="month" id="exp" min="2021-05" max="2025-12" value="2021-05" required></td>
+  </tr>
+
+  <tr>
+    <td class="fieldname"><button type="submit" input type="submit" id="PayNow" style="background: url(PayNow.png)"></button></td>
+  </tr>
+
+   </table>
+</form>
+
+
+
+
+
+<a href="index.html">ePortfolio</a> 
+</html>
